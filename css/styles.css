@@ -4,7 +4,7 @@ html, body {
   padding: 0;
   margin: 0;
   color: #ffffff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #0366d6;
   -webkit-font-smoothing: antialiased;
 }
@@ -31,12 +31,6 @@ h1 {
   float: left;
   width: 50%;
 }
-.column p {
-  font-weight: 300;
-  margin-top: 20px;
-  font-size: 24px;
-  line-height: 1.7;
-}
 #app-store {
   margin-right: 12px;
   background-color: #ffffff;
@@ -52,24 +46,22 @@ h1 {
 }
 #banner {
   margin-top: 20px;
-  height: 60px;
 }
 #banner img {
-  display: inline-block;
-  border-radius: 13px;
-  vertical-align: middle;
-  height: 100%;
-}
-#banner h2 {
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 60px;
-  height: 100%;
-  margin: 0;
-  margin-left: 12px;
-  font-weight: 400;
-  font-size: 30px;
+  width: 258px;
 }
 #hero-title {
-  margin-top: 200px;
+  margin: 150px 0 0 0;
+  padding: 0;
+}
+#hero-description {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.7;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+#hero-buttons {
+  margin: 40px 0 0 0;
+  padding: 0;
 }
