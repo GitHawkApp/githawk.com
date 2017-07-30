@@ -1,7 +1,75 @@
 html, body {
   width: 100%;
   height: 100%;
-}
-body {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #0366d6;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #ffffff;
+}
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+}
+.button {
+  border: 1px solid #ffffff;
+  line-height: 54px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  width: 200px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.column p {
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 1.7;
+}
+#app-store {
+  margin-right: 12px;
+  background-color: #ffffff;
+  color: #0366d6;
+}
+#content {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+#devices {
+  max-width: 1000px;
+}
+#banner {
+  margin-top: 20px;
+  height: 60px;
+}
+#banner img {
+  display: inline-block;
+  border-radius: 13px;
+  vertical-align: middle;
+  height: 100%;
+}
+#banner h2 {
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 60px;
+  height: 100%;
+  margin: 0;
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 30px;
+}
+#hero-title {
+  margin-top: 200px;
 }
