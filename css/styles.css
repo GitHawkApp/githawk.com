@@ -59,9 +59,9 @@ h1 {
   background-color: rgba(255, 255, 255, 0.9);
 }
 #content {
-  height: 100%;
   margin: 0 auto;
   max-width: 1280px;
+  padding-bottom: 60px;
 }
 #banner {
   margin: 20px 0;
