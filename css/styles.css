@@ -33,6 +33,9 @@ h1 {
   text-align: center;
   width: 200px;
 }
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .column {
   float: left;
   width: 50%;
@@ -45,16 +48,22 @@ h1 {
   background-color: #ffffff;
   color: #0366d6;
 }
+#app-store:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
 #content {
   height: 100%;
   margin: 0 auto;
   max-width: 1280px;
 }
 #banner {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 #banner img {
-  width: 258px;
+  width: 201px;
+}
+#banner img:hover {
+  opacity: 0.8;
 }
 #hero-title {
   margin: 150px 0 0 0;
@@ -81,13 +90,13 @@ h1 {
  Responsive
  */
 @media (max-width: 1280px) {
-  #content {
-    text-align: center;
-  }
   .column {
     width: auto;
     padding: 0 20px 40px 20px;
     float: none;
+  }
+  #content {
+    text-align: center;
   }
   #devices {
     width: 100%;
