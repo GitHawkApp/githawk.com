@@ -8,6 +8,7 @@ html, body {
   margin: 0;
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   background-color: #0366d6;
   -webkit-font-smoothing: antialiased;
 }
@@ -16,9 +17,36 @@ a {
   display: inline-block;
   color: #ffffff;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
   font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 600;
+}
+h6 {
+  font-size: 17px;
   line-height: 60px;
   font-weight: 600;
 }
@@ -88,7 +116,7 @@ h1 {
   padding: 0;
 }
 #devices {
-  margin-top: -50px;
+  margin-top: -30px;
   max-width: 1100px;
 }
 #view-source-alt {
@@ -137,4 +165,18 @@ h1 {
   #view-source-alt {
     display: inline-block;
   }
+}
+#large-links {
+  line-height: 55px;
+  float: right;
+}
+#large-links a {
+  font-size: 18px;
+  margin-left: 30px;
+}
+#large-links a:hover {
+  opacity: 0.7;
+}
+#legal a {
+  text-decoration: underline;
 }
