@@ -185,16 +185,16 @@ a:hover {
   h1 {
     font-size: 40px;
     line-height: 50px;
-  } 
+  }
   #hero-description {
     font-size: 22px;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 510px) {
   h1 {
     font-size: 28px;
     line-height: 38px;
-  } 
+  }
   #hero-description {
     font-size: 20px;
   }
