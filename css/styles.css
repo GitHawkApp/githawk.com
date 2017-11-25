@@ -9,8 +9,14 @@ html, body {
   color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  background-color: #0366d6;
   -webkit-font-smoothing: antialiased;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#58afde+0,2c65cc+100 */
+  background: #58afde; /* Old browsers */
+  background: -moz-linear-gradient(top, #58afde 0%, #2c65cc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #58afde 0%,#2c65cc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #58afde 0%,#2c65cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58afde', endColorstr='#2c65cc',GradientType=0 ); /* IE6-9 */
 }
 a {
   text-decoration: none;
