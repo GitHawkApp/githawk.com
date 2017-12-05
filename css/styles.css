@@ -10,6 +10,7 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
+  overflow: auto;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#58afde+0,2c65cc+100 */
   background: #58afde; /* Old browsers */
