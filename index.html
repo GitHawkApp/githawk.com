@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>GitHawk</title>
-    <meta name="author" content="Ryan Nystrom">
-    <meta name="description" content="The simplest GitHub notifications manager for iOS.">
-    <meta name="keywords" content="github,ios,app,githawk,notification,open,source,manager,project,iphone">
-    <link rel="icon" href="img/favicon_16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="img/favicon_32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/favicon_64x64.png" sizes="64x64" type="image/png">
-    <link rel="icon" href="img/favicon_128x128.png" sizes="128x128" type="image/png">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <meta name="google-site-verification" content="r3MoSMlvoUeSAnNSJwop6cSPimkjlE3eJ98oXfRuu4M" />
-    <script>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>GitHawk</title>
+  <meta name="author" content="Ryan Nystrom">
+  <meta name="description" content="The simplest GitHub notifications manager for iOS.">
+  <meta name="keywords" content="github,ios,app,githawk,notification,open,source,manager,project,iphone">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" href="images/favicon_16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="images/favicon_32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="images/favicon_64x64.png" sizes="64x64" type="image/png">
+  <link rel="icon" href="images/favicon_128x128.png" sizes="128x128" type="image/png">
+
+  <!-- Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="google-site-verification" content="r3MoSMlvoUeSAnNSJwop6cSPimkjlE3eJ98oXfRuu4M" />
+  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -24,48 +44,228 @@
       ga('send', 'pageview');
 
     </script>
-  </head>
-  <body>
-    <div id="content">
-      <div id="banner">
-        <a href="index.html">
-          <img src="img/logo.png" />
-        </a>
-        <div id="large-links">
-          <a href="http://blog.githawk.com">Blog</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
+
+</head>
+<body>
+
+  <div class="hero-backing-container">
+    <div class="hero-container">
+      <div class="container">
+
+        <div class="row navbar">
+          <div class="navbar-left">
+            <a href="/">
+              <img class="logo" src="images/logo-light.png">
+              <h2>GitHawk</h2>
+            </a>
+          </div>
+          <div class="navbar-right">
+            <div class="nav-item"><a href="#features">Features</a></div>
+            <div class="nav-item"><a href="http://blog.githawk.com">Blog</a></div>
+            <div class="nav-item"><a href="https://github.com/githawkapp/githawk">GitHub</a></div>
+          </div>
         </div>
-      </div>
-      <div class="column" id="left">
-        <h1 id="hero-title">
-          Take back your GitHub notifications.
-        </h1>
-        <p id="hero-description">
-          GitHawk is the simplest way to <strong>read and respond</strong> to your GitHub notifications on iOS.
-        </p>
-        <p id="hero-buttons">
-          <a class="button" id="app-store" href="https://itunes.apple.com/app/id1252320249">
-            Free Download
-          </a>
-          <a class="button" id="view-source" href="https://github.com/rnystrom/githawk">
-            <img src="img/GitHub-Mark-Light-64px.png" width=32 />
-            View Source
-          </a>
-        </p>
-      </div>
-      <div class="column" id="right">
-        <img id="devices" src="img/devices.png" />
-      </div>
-      <a class="button" id="view-source-alt" href="https://github.com/rnystrom/githawk">
-            <img src="img/GitHub-Mark-Light-64px.png" width=32 />
-            View Source
-      </a>
-      <div id="small-links">
-        <a href="http://blog.githawk.com">Blog</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
+
+        <div class="row">
+
+          <div class="one-half column hero-lead">
+            <h1>GitHub on the go. <span class="hero-free">Free.</span></h1>
+            <p>GitHawk is the easiest way to use GitHub on iOS. Read notifications, reply to issues, merge <span class="nowrap">pull requests</span> and <strong><a href="#features">more</a></strong>.</p>
+            <div class="app-store-badge">
+              <a href="https://itunes.apple.com/us/app/githawk-for-github/id1252320249?ls=1&mt=8">
+                <img src="images/download.svg" />
+              </a>
+            </div>
+          </div>
+
+          <div class="one-half column screenshots">
+            <img src="images/screenshots.png" />
+          </div>
+
+        </div>
+
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="container features" id="features">
+
+    <div class="feature-row">
+      <div class="feature-column feature-image-container">
+        <div class="feature-image">
+          <img src="images/feature-markdown.png" />
+        </div>
+      </div>
+      <div class="spacer-column"><div></div></div>
+      <div class="feature-column">
+        <div class="feature">
+          <h4>GitHub Flavored Markdown</h4>
+          <p>Natively rendered Markdown that is lightning-fast (no web views!) to the <a href="https://github.github.com/gfm/">GFM spec</a>. Even supports interactive elements like checkboxes and links.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-column feature-image-container">
+        <div class="feature-image">
+          <img src="images/feature-merge.png" />
+        </div>
+      </div>
+      <div class="spacer-column"><div></div></div>
+      <div class="feature-column">
+        <div class="feature">
+          <h4>Merge Pull Requests</h4>
+          <p>View pull request merge status, and simply tap to merge however your repository's prefers. Keep projects moving from your phone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-column feature-image-container">
+        <div class="feature-image">
+          <img src="images/feature-reactions.png" />
+        </div>
+      </div>
+      <div class="spacer-column"><div></div></div>
+      <div class="feature-column">
+        <div class="feature">
+          <h4>Read, Reply, React</h4>
+          <p>Keep your issues and pull requests up to date with all the features you're used to on the web. Commenting is easy with Markdown tools and double-tap to 👍.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-column feature-image-container">
+        <div class="feature-image">
+          <img src="images/feature-labels.png" />
+        </div>
+      </div>
+      <div class="spacer-column"><div></div></div>
+      <div class="feature-column">
+        <div class="feature">
+          <h4>Manage Issues &amp; PRs</h4>
+          <p>Add labels, assignees, and milestones as soon as notifications arrive. Keep your issues organized and updated.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row feature-list">
+      <div class="one-third column">
+        <img src="images/feature-icon-diff.png" />
+        <h5>View Code Changes</h5>
+        <p>Browse pull request diffs with the same green &amp; red UI that you're used to.</p>
+      </div>
+      <div class="one-third column">
+        <img src="images/feature-icon-add.png" />
+        <h5>Create New Issues</h5>
+        <p>Quickly add new issues to any repository. Never forget to file a bug.</p>
+      </div>
+      <div class="one-third column">
+        <img src="images/feature-icon-repo.png" />
+        <h5>Search &amp; Browse Repositories</h5>
+        <p>Find any repository, issue, or pull request. Supports all of GitHub's search <a href="https://help.github.com/articles/searching-issues-and-pull-requests/">qualifiers</a>.</p>
+      </div>
+    </div>
+
+    <div class="row feature-list">
+      <div class="one-third column">
+        <img src="images/feature-icon-bookmark.png" />
+        <h5>Bookmarks</h5>
+        <p>Keep track of repositories, issues, and pull requests for quick access.</p>
+      </div>
+      <div class="one-third column">
+        <img src="images/feature-icon-phone.png" />
+        <h5>iPhone, iPad, Watch</h5>
+        <p>GitHawk works on any iOS device running iOS 11+ or watchOS 4+ with support for dynamic text and orientations.</p>
+      </div>
+      <div class="one-third column">
+        <img src="images/feature-icon-users.png" />
+        <h5>Multiple Accounts</h5>
+        <p>Sign in with multiple accounts using <a href="https://github.com/settings/tokens">personal access tokens</a>. Manage personal accounts and bots without signing out.</p>
+      </div>
+    </div>
+
+    <div class="row quote-title">
+      <h3>What people are saying</h3>
+    </div>
+
+    <div class="row">
+      <div class="one-half column quote">
+        <div class="quote-mark">"</div>
+        <p>It’s great to see a solid, native iOS Git client being built in the open. <a href="https://twitter.com/githawk?ref_src=twsrc%5Etfw">@githawk</a> is really nice to use, too! <a href="https://t.co/BDzssAHlWn">https://t.co/BDzssAHlWn</a></p>
+        <div class="author">
+          <a href="https://twitter.com/tonyarnold/status/982741440726876160?ref_src=twsrc%5Etfw">
+            <img src="https://pbs.twimg.com/profile_images/937524068818960384/MOZ0rOVm_bigger.jpg" />
+            <h4>Tony Arnold</h4>
+          </a>
+        </div>
+      </div>
+      <div class="one-half column quote">
+        <div class="quote-mark">"</div>
+        <p>You should try out <a href="https://twitter.com/githawk?ref_src=twsrc%5Etfw">@githawk</a> for a nice way to handle GitHub notifications and pull requests on iOS.</p>
+        <div class="author">
+          <a href="https://twitter.com/WorkingCopyApp/status/986996557047369728?ref_src=twsrc%5Etfw">
+            <img src="https://pbs.twimg.com/profile_images/870251128759472128/pRcAd33u_bigger.jpg" />
+            <h4>Working Copy</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="one-half column quote">
+        <div class="quote-mark">"</div>
+        <p>Just tried <a href="https://twitter.com/_ryannystrom?ref_src=twsrc%5Etfw">@_ryannystrom</a> ‘s githawk on iPad and folks - IT IS EVEN BETTER !</p>
+        <div class="author">
+          <a href="https://twitter.com/icanzilb/status/1001466964613713921?ref_src=twsrc%5Etfw">
+            <img src="https://pbs.twimg.com/profile_images/951213149960769537/skGfzqD4_bigger.jpg" />
+            <h4>Marin Todorov</h4>
+          </a>
+        </div>
+      </div>
+      <div class="one-half column quote">
+        <div class="quote-mark">"</div>
+        <p>I&#39;ve been using <a href="https://twitter.com/githawk?ref_src=twsrc%5Etfw">@githawk</a> for almost a year now. I just had an extraordinary pleasant experience with it with respect to handling 6 different PRs. I just wanted to tell <a href="https://twitter.com/_ryannystrom?ref_src=twsrc%5Etfw">@_ryannystrom</a> &amp; <a href="https://twitter.com/BasThomas?ref_src=twsrc%5Etfw">@BasThomas</a> kudos and wanted to spread the word a bit. This app is a MUS HAVE dev tool!</p>
+        <div class="author">
+          <a href="https://twitter.com/ArtSabintsev/status/1007091186388094977?ref_src=twsrc%5Etfw">
+            <img src="https://pbs.twimg.com/profile_images/768174119129010176/78Lht6zw_bigger.jpg" />
+            <h4>Arthur A. Sabintsev</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer">
+      <div class="three columns">
+        <h6>Open Source</h6>
+        <ul class="footer-list">
+          <li><a href="https://github.com/GitHawkApp/GitHawk">iOS App</a></li>
+          <li><a href="https://github.com/GitHawkApp">Libraries</a></li>
+          <li><a href="https://github.com/GitHawkApp/githawk.com">githawk.com</a></li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <h6>About</h6>
+        <ul class="footer-list">
+          <li><a href="https://twitter.com/githawk">Twitter</a></li>
+          <li><a href="http://blog.githawk.com">Blog</a></li>
+          <li><a href="http://githawk.com/privacy.html">Privacy</a></li>
+          <li><a href="http://githawk.com/terms.html">Terms</a></li>
+        </ul>
+      </div>
+      <div class="one-half column footer-badge">
+        <h6>&nbsp;</h6>
+        <div class="app-store-badge-footer">
+          <a href="https://itunes.apple.com/us/app/githawk-for-github/id1252320249?ls=1&mt=8">
+            <img src="images/download.svg" />
+          </a>
+        </div>
+        <p>Copyright © 2017 Ryan Nystrom</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
 </html>

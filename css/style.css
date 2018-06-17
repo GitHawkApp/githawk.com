@@ -1,0 +1,370 @@
+/* Reset */
+body {
+  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 
+    '.SFNSText-Regular', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #24292e;
+  letter-spacing: 0.4px;
+  -webkit-font-smoothing: antialiased;
+  color: #24292e;
+}
+a {
+  color: #24292e;
+  text-decoration: none;
+}
+a:hover {
+  color: #222222 !important; /* global override */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, 
+    '.SFNSText-Regular', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Navigation */
+.navbar {
+  padding: 2rem 0 0 0;
+}
+@media (min-width: 550px) { .navbar-left {
+  float: left;
+}}
+.navbar-left a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-left img {
+  margin-right: 0.5rem;
+}
+.navbar-left h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 3px 0 0 0;
+  letter-spacing: 1.3px;
+}
+.navbar-left .logo {
+  height: 100%;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+@media (min-width: 550px) { .navbar-right {
+  float: right;
+}}
+.navbar-right a {
+  flex: 1;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #e3ebf7;
+  letter-spacing: 1px;
+}
+.navbar-right a:hover {
+  opacity: 0.5;
+}
+@media (min-width: 550px) { .navbar-right a {
+  margin: 0 0 0 1.5em;
+}}
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
+.navbar a {
+  color: #24292e;
+  height: 4rem;
+}
+
+/* Hero */
+.hero-container a {
+  color: #ffffff;
+}
+.hero-container a:hover {
+  color: #ffffff !important;
+}
+.hero-backing-container {
+  color: #ffffff;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: 
+    http://colorzilla.com/gradient-editor/#2d65cc+0,58afde+100 */
+  background: #2d65cc; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2d65cc 0%, #58afde 100%); 
+    /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2d65cc 0%,#58afde 100%); 
+    /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2d65cc 0%,#58afde 100%); /* W3C, IE10+,
+    FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d65cc', 
+    endColorstr='#58afde',GradientType=1 ); /* IE6-9 fallback on horizontal 
+    gradient */
+}
+.hero-container {
+  background-image: url(../images/wave.svg);
+  background-position: center bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.screenshots {
+  text-align: center;
+}
+.screenshots img {
+  max-height: 850px;
+  margin-bottom: -20%;
+  max-width: 100%;
+}
+@media (min-width: 550px) { .screenshots img {
+  margin-right: -100px; /* adjust for image shadow */
+  max-width: 160%; /* feels about right */
+}}
+.hero-lead {
+  margin-top: 10%;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+}
+@media (min-width: 550px) { .hero-lead {
+  margin-top: 21%;
+  margin-bottom: 30%;
+}}
+.hero-lead h1 {
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 550px) { .hero-lead h1 {
+  text-align: left;
+}}
+.hero-lead p {
+  color: #e3ebf7;
+}
+.hero-lead strong {
+  color: #ffffff;
+}
+.app-store-badge {
+  text-align: center;
+}
+@media (min-width: 550px) { .app-store-badge {
+  margin-top: 5rem;
+  text-align: left;
+}}
+.app-store-badge img {
+  width: 200px;
+}
+.hero-lead .hero-free {
+  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 
+    '.SFNSText-Regular', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  /*font-style: italic;*/
+}
+
+/* Features */
+#features {
+  margin-top: 15%;
+}
+@media (min-width: 550px) { #features {
+  margin-top: 5%;
+}}
+@media (min-width: 1000px) { #features {
+  /*margin-top: 0;*/
+}}
+.feature-image-container {
+  text-align: center;
+  /*margin-bottom: 5%;*/
+}
+.feature-image {
+  /*margin-top: 0;*/
+}
+@media (min-width: 1000px) { .feature-image {
+  /*margin-top: 10%;*/
+}}
+.feature-image img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+
+  /*https://scrumpy.io/*/
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,.07), 0 5px 20px 0 rgba(0,0,0,.06),
+    0 8px 40px 0 rgba(0,0,0,.04);
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,.07), 0 5px 20px 0 rgba(0,0,0,.06), 0 8px
+    40px 0 rgba(0,0,0,.04); 
+}
+@media (min-width: 750px) { .feature-image img {
+  max-width: 100%;
+}}
+.feature {
+  /*margin-top: 5%;
+  margin-bottom: 20%;*/
+}
+@media (min-width: 1000px) { .feature {
+  /*margin-top: 28%;
+  margin-bottom: 40px; */
+}}
+.feature h4 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+.feature p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.feature-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+@media (min-width: 750px) { .feature-row {
+  flex-wrap: nowrap;
+}}
+/* alternate image and text for larger screens */
+@media (min-width: 750px) { .feature-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .feature-row:nth-child(even) .feature {
+    text-align: right;
+  }
+}
+.feature-column {
+  flex: 0 0 auto;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  /*padding: 0 2rem 2rem 0;*/
+  /*padding: 0 2rem 2rem 0;*/
+}
+.feature-column:first-child {
+  /*padding: 0 0 2rem 2rem; */
+}
+@media (min-width: 750px) { .feature-column {
+  flex-basis: 45%;
+  max-width: 45%;
+  /*padding: 0 0 2rem 2rem;*/
+}}
+@media (min-width: 1000px) { .feature-column {
+  /*padding: 0 0 4rem 4rem;*/
+}}
+.spacer-column {
+  display: none;
+  flex-basis: 10%;
+  max-width: 10%;
+  flex: 0;
+}
+@media (min-width: 750px) { .spacer-column {
+  display: block;
+}}
+.spacer-column div {
+  width: 1000px; /* dirty flex hack */
+}
+.feature-list {
+  margin-bottom: 5%;
+}
+.feature-list img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+.feature-list h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.6px;
+}
+.feature-list p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+/* Quotes */
+.quote-title {
+  margin-top: 10%;
+  text-align: center;
+}
+.quote-mark {
+  font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, 
+    '.SFNSText-Regular', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 10rem;
+  line-height: 1rem;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  color: #a3aab1;
+}
+.quote {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.quote p {
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.quote .author a {
+  line-height: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap
+  display: inline-block;
+}
+.quote .author img {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+.quote .author h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.footer h6 {
+  /*text-transform: uppercase;*/
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  /*color: #586069;*/
+}
+.footer a {
+  color: #a3aab1;
+}
+.footer-badge {
+  color: #a3aab1;
+  text-align: center;
+}
+@media (min-width: 550px) { .footer-badge {
+  text-align: right;
+}}
+.app-store-badge-footer img {
+  width: 180px;
+}
+.footer-container {
+  /*background: #24292e;*/
+  width: 100%;
+  margin-top: 5%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-list {
+  list-style: none;
+  margin: 0;
+}
+
+/* Content Pages */
+.content-page .navbar {
+  margin-bottom: 8%;
+}
