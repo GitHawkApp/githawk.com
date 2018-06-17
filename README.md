@@ -1,2 +1,3 @@
-# Freetime-www
-Landing page for [Freetime app](https://github.com/rnystrom/Freetime): http://freetime-app.com/
+# githawk.com
+
+Landing page for the [GitHawk app](https://github.com/githawkapp/githawk) at http://githawk.com.
