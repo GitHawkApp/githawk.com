@@ -158,7 +158,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 
     '.SFNSText-Regular', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 200;
-  /*font-style: italic;*/
 }
 
 /* Features */
@@ -168,19 +167,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 550px) { #features {
   margin-top: 5%;
 }}
-@media (min-width: 1000px) { #features {
-  /*margin-top: 0;*/
-}}
 .feature-image-container {
   text-align: center;
-  /*margin-bottom: 5%;*/
 }
-.feature-image {
-  /*margin-top: 0;*/
-}
-@media (min-width: 1000px) { .feature-image {
-  /*margin-top: 10%;*/
-}}
 .feature-image img {
   border-radius: 10px;
   width: 100%;
@@ -196,14 +185,10 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 750px) { .feature-image img {
   max-width: 100%;
 }}
-.feature {
-  /*margin-top: 5%;
-  margin-bottom: 20%;*/
+.feature a {
+  color: #2d65cc;
+  font-weight: 500;
 }
-@media (min-width: 1000px) { .feature {
-  /*margin-top: 28%;
-  margin-bottom: 40px; */
-}}
 .feature h4 {
   font-weight: 600;
   letter-spacing: 1px;
@@ -236,19 +221,10 @@ h1, h2, h3, h4, h5, h6 {
   flex-basis: 100%;
   max-width: 100%;
   margin-bottom: 2rem;
-  /*padding: 0 2rem 2rem 0;*/
-  /*padding: 0 2rem 2rem 0;*/
-}
-.feature-column:first-child {
-  /*padding: 0 0 2rem 2rem; */
 }
 @media (min-width: 750px) { .feature-column {
   flex-basis: 45%;
   max-width: 45%;
-  /*padding: 0 0 2rem 2rem;*/
-}}
-@media (min-width: 1000px) { .feature-column {
-  /*padding: 0 0 4rem 4rem;*/
 }}
 .spacer-column {
   display: none;
@@ -331,13 +307,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5%;
 }
 .footer h6 {
-  /*text-transform: uppercase;*/
   font-weight: 900;
   font-size: 1.6rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   letter-spacing: 1px;
-  /*color: #586069;*/
 }
 .footer a {
   color: #a3aab1;
@@ -353,7 +327,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 180px;
 }
 .footer-container {
-  /*background: #24292e;*/
   width: 100%;
   margin-top: 5%;
   padding-top: 40px;
