@@ -285,7 +285,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10%;
   text-align: center;
 }
-.quote-mark {
+.quote::before {
+  content: "“";
   font-family: 'Catamaran', -apple-system, BlinkMacSystemFont, 
     '.SFNSText-Regular', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 10rem;
@@ -293,6 +294,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
   margin-bottom: -20px;
   color: #a3aab1;
+  display: block;
 }
 .quote {
   margin-top: 2rem;
